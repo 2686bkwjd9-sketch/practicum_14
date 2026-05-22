@@ -1,14 +1,14 @@
 n = int(input())
-dict = {}
+translator = {}
 
-for i in range(n):
+for _ in range(n):
     ru, en = input().split()
-    dict[ru] = en
+    translator[ru] = en
 
 phrase = input().split()
 
 for word in phrase:
-    if word in dict:
-        print(dict[word], end=" ")
+    if word in translator:
+        print(translator[word], end=" ")
     else:
         print(word, end=" ") 
