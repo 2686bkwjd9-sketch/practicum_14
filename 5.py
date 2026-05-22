@@ -1,4 +1,7 @@
 def family(name):
+    """This function counts the number of descendants
+    a person has within the 'tree' dictionary."""
+    
     if name not in tree:
         return 0
 
