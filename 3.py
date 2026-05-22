@@ -1,16 +1,16 @@
 n = int(input())
 
-dict = {}
+dictionary = {}
 
 for i in range(n):
     word1, word2 = input().split()
-    dict[word1] = word2
-    dict[word2] = word1
+    dictionary[word1] = word2
+    dictionary[word2] = word1
 
 word = input()
 
-if word in dict:
-    print(dict[word])
+if word in dictionary:
+    print(dictionary[word])
 else:
     print(word)
     
