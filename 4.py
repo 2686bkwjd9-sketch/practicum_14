@@ -1,17 +1,15 @@
 n = int(input())
 
-dict = {}
+dictionary = {}
 
 for i in range(n):
-    word1, word2 = input().split()
-    dict[word1] = word2
-    dict[word2] = word1
+    line = input().split()
+    form = line[0]
 
-word = input()
+    for item in line[1:]:
+        dictionary[item] = form
 
-if word in dict:
-    print(dict[word])
-else:
-    print(word)
-    
+check = input()
+
+print(dictionary[check])
     
